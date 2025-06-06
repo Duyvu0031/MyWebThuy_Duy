@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Reveger - KaylinGame</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 40px; /* Điều chỉnh chiều cao của logo theo ý muốn */
+            width: auto;
+            vertical-align: middle;
+        }
+
+        header .logo a {
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #ccc;
+            margin-left: 16px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #a855f7;
+        }
+
+        /* CSS dành riêng cho trang chi tiết game */
+        .game-detail-container {
+            padding: 32px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .game-detail-container h1 {
+            color: #a855f7;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .game-detail-container img.main-game-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .game-detail-container .section {
+            background-color: #1f1f1f;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-detail-container .section h2 {
+            color: #a855f7;
+            margin-bottom: 15px;
+        }
+
+        .game-detail-container .section p,
+        .game-detail-container .section ul {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .game-detail-container .section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .game-detail-container .download-area {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .game-detail-container .download-button {
+            display: inline-block;
+            background-color: #a855f7;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 10px; /* Khoảng cách giữa nút và số lượt tải */
+        }
+
+        .game-detail-container .download-button:hover {
+            background-color: #9333ea;
+        }
+
+        .game-detail-container .download-count {
+            font-size: 14px;
+            color: #bbb;
+            display: block; /* Để số lượt tải nằm dưới nút */
+        }
+
+        .game-detail-container .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .game-detail-container .gallery img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer; /* Thêm con trỏ tay khi di chuột qua ảnh */
+        }
+
+        .game-detail-container .gallery img:hover {
+            opacity: 0.9; /* Hiệu ứng nhẹ khi di chuột qua */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #bbb;
+            font-size: 14px;
+            background-color: #1e1e1e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Images/logo_ThuyDuy.png" alt="KaylinGame Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Trang Chủ</a>
+            <a href="#">Game Vui Nhà Làm</a>
+        </nav>
+    </header>
+
+    <div class="game-detail-container">
+        <h1>The Reveger - Cuộc Báo Thù Khốc Liệt</h1>
+
+        <img src="Images/1.jpg" alt="The Reveger Banner" class="main-game-image">
+
+        <div class="section">
+            <h2>Hành Trình Báo Thù Cực Đã!</h2>
+            <p>Bước vào thế giới của **The Reveger**, bạn không chỉ chơi game mà là đang dấn thân vào một **cuộc báo thù không khoan nhượng**, nơi mỗi quyết định đều định đoạt số phận! Bạn sẽ hóa thân thành một chiến binh bị phản bội, bị tước đoạt tất cả, và giờ đây, chỉ có lửa hận thù mới có thể dẫn lối.</p>
+            <p>Với **đồ họa đỉnh cao** mang phong cách **pixel-art u ám nhưng đầy cuốn hút**, The Reveger sẽ khiến bạn choáng ngợp bởi từng chi tiết của thế giới giả tưởng đen tối. Từ những hầm ngục đổ nát cho đến các thành phố bị nguyền rủa, mọi thứ đều được thiết kế tỉ mỉ để tạo nên một trải nghiệm **nghẹt thở và chân thực đến khó tin**.</p>
+            <p>Đừng lầm tưởng đây chỉ là một tựa ARPG thông thường, The Reveger sẽ đẩy bạn đến giới hạn của kỹ năng và bản lĩnh! Hãy chuẩn bị tinh thần để đối mặt với những thử thách "khủng khiếp" và những kẻ thù "không đội trời chung" trên con đường tìm lại công lý!</p>
+        </div>
+
+        <div class="section">
+            <h2>Điều khiển trong game - Chuẩn bị tinh thần "mất hồn"</h2>
+            <p>Trước khi dấn thân vào hành trình báo thù đẫm máu này, hãy làm quen với những phím điều khiển cơ bản, nắm vững như lòng bàn tay để không phải "tụt quần" giữa trận chiến:</p>
+            <ul>
+                <li>**Di chuyển thần sầu:** Sử dụng tổ hợp phím **W**, **A**, **S**, **D** để tung hoành ngang dọc, khám phá mọi ngóc ngách của thế giới tăm tối. Hoặc nếu bạn là fan của sự cổ điển, **4 phím mũi tên** huyền thoại vẫn sẵn sàng phục vụ.</li>
+                <li>**Giải nguy tức thì:** Khi cảm thấy "toang", hãy nhấn ngay **ESC** để tạm dừng game, nghiền ngẫm chiến thuật hoặc đơn giản là... thở một hơi. Bên trong còn có **giao diện UI đẹp mắt** đến từng pixel và tùy chỉnh **đồ họa pixel siêu đẹp**, đảm bảo bạn sẽ phải "wow" lên vì quá chất!</li>
+                <li>**Tấn công không khoan nhượng:**
+                    <ul>
+                        <li>**Chuột trái:** Chỉ một cú click, kẻ thù sẽ phải run sợ dưới lưỡi kiếm (hoặc ma pháp) của bạn. Tung ra những đòn tấn công dồn dập, không cho chúng kịp thở!</li>
+                        <li>**Chuột phải:** Khi đạn dược cạn kiệt hoặc năng lượng ma pháp suy yếu, một cú click chuột phải sẽ giúp bạn **nạp đạn** (hoặc hồi phục năng lượng) nhanh chóng, sẵn sàng cho những màn "solo" nảy lửa tiếp theo.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Nhưng đó chưa phải là tất cả! The Reveger còn ẩn chứa những điều khiến bạn "mất ăn mất ngủ":</p>
+            <ul>
+                <li>**Những trận đánh trùm "nghẹt thở":** Chuẩn bị tinh thần đối mặt với những **con trùm** khổng lồ, sở hữu sức mạnh kinh hoàng và những **chiêu thức** "bá đạo". Chỉ một giây lơ là, bạn sẽ phải trả giá đắt!</li>
+                <li>**Nghệ thuật sinh tồn đỉnh cao:** Không chỉ tấn công, bạn còn phải học cách **né tránh** những đòn tấn công hiểm hóc, những làn **đạn** xé gió. Mỗi bước di chuyển, mỗi lần tung chiêu đều phải tính toán kỹ lưỡng.</li>
+                <li>**Và còn vô vàn bí mật đang chờ bạn khám phá...** Hãy dấn thân vào thế giới của The Reveger để trải nghiệm những điều "hết hồn" mà chúng tôi đã dày công xây dựng!</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Hình Ảnh Trong Game</h2>
+            <div class="gallery">
+                <img src="Images/1.jpg" alt="Reveger Screenshot 1">
+                <img src="Images/2.png" alt="Reveger Screenshot 2">
+                <img src="Images/3.png" alt="Reveger Screenshot 3">
+                <img src="Images/4.jpg" alt="Reveger Screenshot 4">
+            </div>
+        </div>
+
+        <div class="download-area">
+            <a href="https://drive.google.com/file/d/1-mkg6kIsAjcVMbIIAacj8yUP23FujVz0/view?usp=drive_link" class="download-button" id="downloadButtonTheReveger" target="_blank">Tải Game The Reveger</a>
+            <span class="download-count" id="downloadCountTheReveger">(88 lượt tải)</span>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 KaylinGame. Thúy Duy và những người trong team cảm ơn mọi người đã ủng hộ.</p>
+    </footer>
+
+    <script>
+        // JavaScript cho The Reveger
+        const downloadButtonTheReveger = document.getElementById('downloadButtonTheReveger');
+        const downloadCountElementTheReveger = document.getElementById('downloadCountTheReveger');
+        const storageKeyTheReveger = 'theRevegerDownloadCount';
+
+        // Lấy số lượt tải từ localStorage, nếu không có thì bắt đầu từ 88
+        let currentDownloadCountTheReveger = parseInt(localStorage.getItem(storageKeyTheReveger)) || 88; 
+        downloadCountElementTheReveger.textContent = `(${currentDownloadCountTheReveger} lượt tải)`;
+
+        downloadButtonTheReveger.addEventListener('click', () => {
+            currentDownloadCountTheReveger++;
+            localStorage.setItem(storageKeyTheReveger, currentDownloadCountTheReveger);
+            downloadCountElementTheReveger.textContent = `(${currentDownloadCountTheReveger} lượt tải)`;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaylin Game</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    header .logo img {
+      height: 40px; /* Điều chỉnh chiều cao của logo theo ý muốn */
+      width: auto;
+      vertical-align: middle;
+    }
+
+    header .logo a {
+        text-decoration: none;
+    }
+
+    nav a {
+      color: #ccc;
+      margin-left: 16px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #a855f7;
+    }
+
+    .container {
+      padding: 32px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background-color: #1f1f1f;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card .info {
+      padding: 16px;
+    }
+
+    .card .info h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .card .info p {
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    /* CSS cho trang chi tiết game */
+    .game-detail-container {
+        padding: 32px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .game-detail-container h1 {
+        color: #a855f7;
+        margin-bottom: 20px;
+    }
+
+    .game-detail-container img.main-game-image {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .game-detail-container .section {
+        background-color: #1f1f1f;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .game-detail-container .section h2 {
+        color: #a855f7;
+        margin-bottom: 15px;
+    }
+
+    .game-detail-container .section p,
+    .game-detail-container .section ul {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #ccc;
+    }
+
+    .game-detail-container .section ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+
+    .game-detail-container .download-area {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .game-detail-container .download-button {
+        display: inline-block;
+        background-color: #a855f7;
+        color: #fff;
+        padding: 12px 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        margin-bottom: 10px; /* Khoảng cách giữa nút và số lượt tải */
+    }
+
+    .game-detail-container .download-button:hover {
+        background-color: #9333ea;
+    }
+
+    .game-detail-container .download-count {
+        font-size: 14px;
+        color: #bbb;
+    }
+
+    .game-detail-container .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .game-detail-container .gallery img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="Images/logo_ThuyDuy.png" alt="KaylinGame Logo">
+      </a>
+    </div>
+    <nav>
+      <a href="index.html">Trang Chủ</a>
+      <a href="#">Game Vui Nhà Làm</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Game Mới Cập Nhật</h2>
+    <div class="grid">
+      <div class="card">
+        <a href="tiny-mini.html">
+            <img src="Images/2_1.jpg" alt="Tiny Mini Game Cover">
+            <div class="info">
+              <h3>[TungDuy] Tiny Mini</h3>
+              <p>Khám phá thế giới tí hon đầy phiêu lưu trong Tiny Mini!</p>
+            </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="the-reveger.html">
+            <img src="Images/1.jpg" alt="The Reveger Game Cover">
+            <div class="info">
+              <h3>[Thúy Duy]The Reveger</h3>
+              <p>Đắm mình vào cuộc báo thù đầy kịch tính trong The Reveger!</p>
+            </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="#">
+            <img src="Images/images_demo3.jpg" alt="Pokemon Game Cover">
+            <div class="info">
+              <h3>[Dự Án] Pokemon: Vùng Đất Vietnam</h3>
+              <p>Hành trình trở thành Bậc Thầy Pokemon đang chờ đón bạn!</p>
+            </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

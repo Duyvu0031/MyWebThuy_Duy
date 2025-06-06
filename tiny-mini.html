@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Mini - KaylinGame</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 40px;
+            width: auto;
+            vertical-align: middle;
+        }
+
+        header .logo a {
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #ccc;
+            margin-left: 16px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #a855f7;
+        }
+
+        /* CSS dành riêng cho trang chi tiết game */
+        .game-detail-container {
+            padding: 32px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .game-detail-container h1 {
+            color: #a855f7;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .game-detail-container img.main-game-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .game-detail-container .section {
+            background-color: #1f1f1f;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-detail-container .section h2 {
+            color: #a855f7;
+            margin-bottom: 15px;
+        }
+
+        .game-detail-container .section p,
+        .game-detail-container .section ul {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .game-detail-container .section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .game-detail-container .download-area {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .game-detail-container .download-button {
+            display: inline-block;
+            background-color: #a855f7;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 10px; /* Khoảng cách giữa nút và số lượt tải */
+        }
+
+        .game-detail-container .download-button:hover {
+            background-color: #9333ea;
+        }
+
+        .game-detail-container .download-count {
+            font-size: 14px;
+            color: #bbb;
+            display: block; /* Để số lượt tải nằm dưới nút */
+        }
+
+        .game-detail-container .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .game-detail-container .gallery img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer; /* Thêm con trỏ tay khi di chuột qua ảnh */
+        }
+
+        .game-detail-container .gallery img:hover {
+            opacity: 0.9; /* Hiệu ứng nhẹ khi di chuột qua */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #bbb;
+            font-size: 14px;
+            background-color: #1e1e1e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Images/logo_ThuyDuy.png" alt="KaylinGame Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Trang Chủ</a>
+            <a href="#">Game Vui Nhà Làm</a>
+        </nav>
+    </header>
+
+    <div class="game-detail-container">
+        <h1>Tiny Mini - Khám Phá Thế Giới Tí Hon</h1>
+
+        <img src="Images/4_1.jpg" alt="Tiny Mini Banner" class="main-game-image">
+
+        <div class="section">
+            <h2>Chào mừng đến với Tiny Mini - Phiêu lưu trong thế giới "siêu tí hon"!</h2>
+            <p>Bạn đã bao giờ mơ ước được khám phá thế giới từ góc nhìn của một hạt bụi chưa? **Tiny Mini** sẽ biến giấc mơ đó thành hiện thực! Bước vào một cuộc phiêu lưu platformer 2D đầy mê hoặc, nơi bạn sẽ hóa thân thành một anh hùng "tí hon" bé nhỏ nhưng đầy nghị lực, vượt qua muôn vàn thử thách trong một môi trường quen thuộc nhưng lại trở nên "khổng lồ" đến khó tin.</p>
+            <p>Từ những chiếc lá cây trở thành cao nguyên hiểm trở, đến những giọt nước đọng sương biến thành đại dương bao la, mỗi bước chân của bạn trong Tiny Mini đều là một hành trình khám phá đầy bất ngờ. Với **đồ họa pixel-art đáng yêu, sống động** và nhạc nền vui tươi, game không chỉ mang đến niềm vui giải trí mà còn kích thích trí tưởng tượng của bạn về một thế giới vi mô đầy màu sắc!</p>
+        </div>
+
+        <div class="section">
+            <h2>Điều khiển và thử thách - "Đập đầu" với những cạm bẫy cực đỉnh!</h2>
+            <p>Để sống sót và chinh phục thế giới tí hon này, hãy nắm vững những phím điều khiển "thần thánh" và chuẩn bị tinh thần đối mặt với những cạm bẫy "hack não" nhất:</p>
+            <ul>
+                <li>**Di chuyển linh hoạt:** Sử dụng các phím **W, A, S, D** hoặc **4 phím mũi tên** để điều khiển nhân vật bay nhảy, chạy, bò qua mọi địa hình. Bạn sẽ cần sự khéo léo để né tránh hiểm nguy!</li>
+                <li>**Nhảy và vượt chướng ngại vật:** Nhấn **Space** để thực hiện những cú nhảy thần sầu, vượt qua các khoảng trống, leo lên những vị trí cao. Mỗi cú nhảy đều quan trọng!</li>
+                <li>**Tạm dừng và chiêm ngưỡng:** Khi cần nghỉ ngơi hoặc suy nghĩ chiến thuật, chỉ cần nhấn **ESC** để tạm dừng game. Tận hưởng **Setting chọn map** đa dạng và khám phá từng chi tiết của **đồ họa pixel siêu đẹp** mà bạn sẽ không thể rời mắt.</li>
+                <li>**Mê cung cạm bẫy:**
+                    <ul>
+                        <li>**Thử thách "Tìm Key":** Để giành lấy chiến thắng cuối cùng, bạn phải vượt qua vô vàn cạm bẫy "hack não" và những câu đố hóc búa để **tìm được chiếc chìa khóa bí ẩn**. Đây không chỉ là game giải trí, mà còn là bài kiểm tra IQ của bạn!</li>
+                        <li>**Thám hiểm nguy hiểm:** Hãy cẩn thận! Bạn sẽ phải **nhảy đu bám trên những sợi dây xích** lung lay, **né tránh những quái vật** tí hon nhưng cực kỳ hung hãn, và **nhảy lên những khối nền di chuyển (flatmoving)** đầy bất trắc. Chỉ một bước sai lầm cũng đủ khiến bạn "bay màu"!</li>
+                        <li>**Cuộc chạy trốn sinh tồn:** Chuẩn bị tinh thần cho những màn **chạy trốn khỏi những cục đá khổng lồ đang sập** từ trên cao xuống! Tốc độ và phản xạ sẽ là chìa khóa để bạn sống sót.</li>
+                    </ul>
+                </li>
+                <li>**Thu thập và tích điểm:** Đừng quên **nhặt thật nhiều đồng vàng** lấp lánh trên đường đi để tích lũy điểm số và mở khóa những phần thưởng bất ngờ. Mỗi đồng tiền đều có giá trị!</li>
+            </ul>
+            <p>Tiny Mini không chỉ là một trò chơi, đó là một cuộc phiêu lưu đầy bất ngờ và thử thách. Hãy tải ngay để trải nghiệm cảm giác "nghẹt thở" và "thót tim" khi khám phá thế giới tí hon đầy mê hoặc này!</p>
+        </div>
+
+        <div class="section">
+            <h2>Hình Ảnh Trong Game</h2>
+            <div class="gallery">
+                <a href="Images/1_1.png" target="_blank"><img src="Images/1_1.png" alt="Tiny Mini Screenshot 1"></a>
+                <a href="Images/2_1.jpg" target="_blank"><img src="Images/2_1.jpg" alt="Tiny Mini Screenshot 2"></a>
+                <a href="Images/3_1.png" target="_blank"><img src="Images/3_1.png" alt="Tiny Mini Screenshot 3"></a>
+                <a href="Images/4_1.jpg" target="_blank"><img src="Images/4_1.jpg" alt="Tiny Mini Screenshot 4"></a>
+            </div>
+        </div>
+
+        <div class="download-area">
+            <a href="https://drive.google.com/file/d/1L-6aYhI4GENAWmfBV4SJCFsYc2fuCuwq/view?usp=sharing" class="download-button" id="downloadButtonTinyMini" target="_blank">Tải Game Tiny Mini</a>
+            <span class="download-count" id="downloadCountTinyMini"></span>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 KaylinGame. Thúy Duy và những người trong team cảm ơn mọi người đã ủng hộ.</p>
+    </footer>
+
+    <script>
+        // JavaScript cho Tiny Mini
+        const downloadButtonTinyMini = document.getElementById('downloadButtonTinyMini');
+        const downloadCountElementTinyMini = document.getElementById('downloadCountTinyMini');
+        const storageKeyTinyMini = 'tinyMiniDownloadCount';
+
+        let currentDownloadCountTinyMini = parseInt(localStorage.getItem(storageKeyTinyMini)) || 45; // Bắt đầu từ 45
+        downloadCountElementTinyMini.textContent = `(${currentDownloadCountTinyMini} lượt tải)`;
+
+        downloadButtonTinyMini.addEventListener('click', () => {
+            currentDownloadCountTinyMini++;
+            localStorage.setItem(storageKeyTinyMini, currentDownloadCountTinyMini);
+            downloadCountElementTinyMini.textContent = `(${currentDownloadCountTinyMini} lượt tải)`;
+        });
+    </script>
+</body>
+</html>
