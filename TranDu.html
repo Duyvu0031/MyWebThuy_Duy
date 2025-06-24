@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TranDu - KaylinApp</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo img {
+      height: 40px;
+      width: auto;
+    }
+
+    nav a {
+      color: #ccc;
+      margin-left: 16px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #a855f7;
+    }
+
+    .app-detail-container {
+      padding: 32px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .app-detail-container h1 {
+      color: #a855f7;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .app-detail-container img.main-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      background-color: #1f1f1f;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .section h2 {
+      color: #a855f7;
+      margin-bottom: 15px;
+    }
+
+    .section p, .section ul {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .section ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+
+    .download-area {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .download-button {
+      display: inline-block;
+      background-color: #a855f7;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      margin-bottom: 10px;
+    }
+
+    .download-button:hover {
+      background-color: #9333ea;
+    }
+
+    .download-count {
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #bbb;
+      font-size: 14px;
+      background-color: #1e1e1e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="Images/logo.png" alt="KaylinApp Logo">
+      </a>
+    </div>
+    <nav>
+      <a href="index.html">Trang Chủ</a>
+      <a href="#">Ứng dụng Flutter</a>
+    </nav>
+  </header>
+
+  <div class="app-detail-container">
+    <h1>TranDu - Ứng Dụng Từ Điển Song Ngữ</h1>
+
+    <img src="Images/1n.png" alt="TranDu Banner" class="main-image">
+
+    <div class="section">
+      <h2>Giới thiệu về TranDu</h2>
+      <p><strong>TranDu</strong> là ứng dụng từ điển song ngữ Việt - Anh được xây dựng bằng ngôn ngữ <strong>Flutter (Dart)</strong>. Đây là <strong>dự án Flutter đầu tiên</strong> của Kaylin, với mục tiêu giúp người học tra cứu nghĩa từ vựng nhanh chóng, dễ hiểu và dễ dùng trên mọi thiết bị Android.</p>
+    </div>
+
+    <div class="section">
+      <h2>Tính năng chính</h2>
+      <ul>
+        <li>🔍 Tìm kiếm từ vựng tiếng Anh - tiếng Việt tức thời</li>
+        <li>📘 Hiển thị định nghĩa kèm ví dụ dễ hiểu</li>
+        <li>⭐ Giao diện đơn giản, tối ưu cho mọi lứa tuổi</li>
+        <li>📱 Thiết kế responsive, chạy mượt trên điện thoại Android</li>
+        <li>🚀 Được phát triển bằng Flutter – ngôn ngữ hiện đại, hiệu năng cao</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Ảnh giao diện</h2>
+      <div class="gallery">
+        <a href="Images/2n.png" target="_blank"><img src="Images/2n.png" alt="TranDu Screenshot 1"></a>
+        <a href="Images/3n.png" target="_blank"><img src="Images/3n.png" alt="TranDu Screenshot 2"></a>
+        <a href="Images/4n.png" target="_blank"><img src="Images/4n.png" alt="TranDu Screenshot 3"></a>
+        <a href="Images/5n.png" target="_blank"><img src="Images/5n.png" alt="TranDu Screenshot 4"></a>
+      </div>
+    </div>
+
+    <div class="download-area">
+      <a href="https://drive.google.com/drive/folders/1jxxAGH_YCYqyF26LjmcD_YwS-JmOl-NA?usp=drive_link" class="download-button" id="downloadButton" target="_blank">Tải Ứng Dụng TranDu</a>
+      <span class="download-count" id="downloadCount"></span>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 KaylinApp. Cảm ơn bạn đã trải nghiệm ứng dụng đầu tay của mình 👌😍</p>
+  </footer>
+
+  <script>
+    // Đếm lượt tải
+    const downloadButton = document.getElementById('downloadButton');
+    const downloadCountElement = document.getElementById('downloadCount');
+    const storageKey = 'tranDuDownloadCount';
+
+    let count = parseInt(localStorage.getItem(storageKey)) || 100;
+    downloadCountElement.textContent = `(${count} lượt tải)`;
+
+    downloadButton.addEventListener('click', () => {
+      count++;
+      localStorage.setItem(storageKey, count);
+      downloadCountElement.textContent = `(${count} lượt tải)`;
+    });
+  </script>
+</body>
+</html>
